@@ -5,14 +5,17 @@ root = Tk()
 
 workbook = load_workbook(r"C:\vscode\Book2.xlsx")
 sheet = workbook.active
-z = Entry(root, textvariable = StringVar)
-def submit():
-    k = z.get()
-    row = sheet.max_row
-    sheet.cell(row = row+1, column = 1).value = k
-    workbook.save(r"C:\vscode\Book2.xlsx")
-    z.delete('0','end')
-s = Button(root, text = 'submit', command = submit)
-z.pack()
-s.pack()
+def signin():
+    username_e = Entry(root, text = "user name")
+    email_e = Entry(root, text = "email")
+    password_e = Entry(root, text = "")
+    repassword_e = Entry(root, text = "")
+    submit = Button(root, text = "")
+def signup():
+    username_e = Entry(root, text = "")
+    password_e = Entry(root, text = "")
+    sign = Button(root, text = "")
+up = Button(root,text = "Signup", command = signup)
+si = Button(root,text = "Signin", command = signin)
+
 root.mainloop()
