@@ -47,19 +47,19 @@ def Submit():
     wb.save('Book2.xlsx')
 submit = Button(root,text = 'submit', command = Submit)
 
-name_D.grid()
-maincourse_D.grid()
-drinks_D.grid()
-deserts_D.grid()
-starter_D.grid()
-submit.grid()
+name_D.grid(row = 1 , column = 1)
+starter_D.grid(row =2  , column = 1)
+maincourse_D.grid(row = 3 , column = 1)
+drinks_D.grid(row = 4 , column =1 )
+deserts_D.grid(row = 5  , column = 1)
+submit.grid(row = 6 , column =2)
 
 
-name_e.grid()
-starter_E.grid()
-maincourse_E.grid()
-drinks_E.grid()
-deserts_E.grid()
+name_e.grid(row = 1, column =2 )
+starter_E.grid(row = 2, column =2 )
+maincourse_E.grid(row = 3, column = 2 )
+drinks_E.grid(row = 4, column = 2 )
+deserts_E.grid(row = 5, column = 2 )
 
 
 root.mainloop()
