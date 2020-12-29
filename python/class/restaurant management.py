@@ -33,11 +33,11 @@ def Submit():
     drinks = drinks_E.get()
     
     num = str(sheet.max_row)
-    sheet[f'a{num}'] = name
-    sheet[f'b{num}'] = starters
-    sheet[f'c{num}'] = maincourse
-    sheet[f'd{num}'] = deserts
-    sheet[f'e{num}'] = drinks
+    sheet[f'e{num}'] = name
+    sheet[f'a{num}'] = starters
+    sheet[f'b{num}'] = maincourse
+    sheet[f'c{num}'] = deserts
+    sheet[f'd{num}'] = drinks
 
     name_e.delete(0,'end')
     starter_E.delete(0,'end')
