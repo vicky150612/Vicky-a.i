@@ -15,7 +15,6 @@ def signup():
     email_e.pack()
     password_e.pack()
     repassword_e.pack()
-    Workbook.save(r"C:\vscode\book.xlsx")
 def signin():
     username_e = Entry(root, text = "username ")
     password_e = Entry(root, text = "password")
@@ -25,7 +24,6 @@ def signin():
     username_e.pack()
     password_e.pack()
     sign.pack()
-    Workbook.save(r"C:\vscode\book.xlsx")
 up = Button(root,text = "Signup", command = signup)
 si = Button(root,text = "Signin", command = signin)
 up.pack()
