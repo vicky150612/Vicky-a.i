@@ -8,7 +8,7 @@ root.title("my_restrant")
 wb = load_workbook("Book2.xlsx")
 sheet = wb.active
 
-name_D = Label(root, text="Name : ")
+name_D = Label(root, text='Name : ')
 starter_D = Label(root, text="starter : ")
 maincourse_D = Label(root, text="main course : ")
 deserts_D = Label(root, text="deserts : ")
