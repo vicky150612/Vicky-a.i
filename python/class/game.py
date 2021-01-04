@@ -24,17 +24,17 @@ def signup():
             for i in db :
                 s = i 
                 if s == username :
-                    print('not avalible')
+                    print('username not avalible')
                 else :
                     None
 
     repassword_e = Entry(root, text="re-enter password")
     submit_b = Button(root, text="submit",command = submit)
-    submit_b.pack()
-    username_e.pack()
-    email_e.pack()
-    password_e.pack()
-    repassword_e.pack()
+    submit_b.grid()
+    username_e.grid()
+    email_e.grid()
+    password_e.grid()
+    repassword_e.grid()
     my_cursor.execute(
         "insert into signin_forms (name,email,password) values(%s,%s,%s) ",
         ("shashank", "iamshashank", "1506"),
@@ -49,15 +49,15 @@ def signin():
         pass
 
     sign = Button(root, text="sign in")
-    username_e.pack()
-    password_e.pack()
-    sign.pack()
+    username_e.grid()
+    password_e.grid()
+    sign.grid()
 
 
 up = Button(root, text="Signup", command=signup)
 si = Button(root, text="Signin", command=signin)
-up.pack()
-si.pack()
+up.grid()
+si.grid()
 
 mydb.commit()
 root.mainloop()
