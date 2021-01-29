@@ -5,10 +5,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return render_template('index.html')
+    return render_template('shashank.html')
 
-@app.route('/shashank')
+@app.route('/submit')
 def shashank():
-    return 'HelloWorld!'
+    return render_template('dbdb.html')
 
 app.run(debug=True)
